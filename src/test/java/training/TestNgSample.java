@@ -22,7 +22,7 @@ public class TestNgSample {
 	    driver = new ChromeDriver(co);
 	}
 
-	@Test
+	//@Test
 	public void validate() throws Exception {
 		driver.get("https://www.google.com/");
 		driver.findElement(By.xpath("//*[@id=\"gbw\"]/div/div/div[1]/div[1]/a")).click();
