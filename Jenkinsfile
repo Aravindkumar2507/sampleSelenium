@@ -24,12 +24,10 @@ pipeline {
                 }    
         }
         stage('Results') {
-            post{
-                success {
+            steps {
                     junit '**/target/surefire-reports/TEST-*.xml'
                 
-                }    
-            }
+             }    
         }    
     }
      post{
