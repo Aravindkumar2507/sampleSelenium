@@ -23,7 +23,7 @@ pipeline {
                     bat "mvn package"
                 }    
         }
-        stage('Package') {
+        stage('Results') {
             post{
                 success {
                     junit '**/target/surefire-reports/TEST-*.xml'
