@@ -32,4 +32,10 @@ pipeline {
             }
         }    
     }
+     post{
+       success {
+                    echo "Success From POst ControLLLL" 
+                
+       }        
+    }   
 }
